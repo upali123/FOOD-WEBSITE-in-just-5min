@@ -1,0 +1,227 @@
+/*css reset*/
+*{
+    margin: opx;
+    padding: 0px;
+}
+/*css varibles*/
+           :root{
+               --navbar-height: 59px;
+           }
+           /*navigation bar*/
+           #navbar{
+               position: relative;
+               display: flex;
+               align-items: center;
+               
+               
+               
+           }
+           #navbar::before{
+            content: "" ;
+            background-color: black;
+            position: absolute;
+            height: 70%;
+            width: 100%;
+            z-index: -1;  
+            /* used for showing content which is under the background color*/
+            opacity: 0.6;
+}
+               
+     /*navigation bar: logo and img*/          
+           
+           #logo{
+             margin: 10px 24px;
+           }
+           #logo img{
+               margin: 2px 2px;
+               height: 53px;
+               
+           }
+           /*navigation :list styles*/
+          #navbar ul{
+               display: flex;
+            
+               
+           }
+           #navbar ul li{
+
+         list-style: none;
+         font-size: 1rem;
+        border-radius: 10px;
+
+           }
+           
+           
+           #navbar ul li a{
+            display: block;
+            padding: 12px 23px;
+            border-radius: 10px ;
+            text-decoration: none;
+            color: rgb(235, 243, 240);
+           
+            }
+
+            #navbar ul li a:hover{
+              background-color: rgb(151, 182, 121);
+                color: rgb(15, 19, 17);
+                }
+          
+  /*section:home or button*/
+  #home::before{
+    content: "" ;
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -2;  
+    opacity: 0.79;
+      background-image: url(photo-1490818387583-1baba5e638af.jpg) ;
+   
+      }
+  #home{
+display: flex;
+flex-direction: column;
+height: 300px;
+justify-content: center;
+align-items: center;
+  }
+  #home h1{
+    color: rgb(22, 21, 18);
+    text-align: center;
+    margin: 2px 3px;
+      }
+      #home p{
+          margin: 2px 3px;
+          color: rgb(10, 9, 9);
+          text-align: center;
+      }
+  /*utility classes*/
+  .h-primary{
+font-size: 4rem;
+color: rgb(14, 13, 12);
+justify-content: center;
+align-items: center;
+  }
+  .h-secondary{
+      font-size: 208rem;
+  }
+  .btn{
+      padding:6px 28px ;
+      color: rgb(10, 9, 9);
+      font-size: 0.9rem;
+      border:2px solid rgb(7, 7, 7);
+      background-color: rgb(64, 233, 106);
+      border-radius: 10px;
+  }
+  .center{
+      text-align: center;
+  }
+ /*services section*/
+ 
+
+ #services{
+     
+    margin: 34px;
+    display: flex;
+     
+}
+#services .box{
+    border: 2px solid brown;
+    height:200px;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 24px;
+}
+#services .box img{
+    height: 93px;
+    margin: 2px 2px;
+    margin: auto;
+    display:block;
+}
+#services .box h1{
+    font-size: 22px;
+}
+
+ 
+ 
+
+ /*client section*/
+ .client-section{
+     
+     justify-content: center;
+     margin: auto;
+     display: flex;
+     position: relative;
+ }
+ .client-section::before{
+     content: "";
+     position:absolute;
+     background: url();
+     width:100%;
+     height: 30%; ;
+     z-index: -1;
+     opacity: 0.5;
+ }
+
+ #clients{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+ }
+ .clientitems{
+     padding: 10px;
+     
+
+    
+ }
+#clients img{
+    margin: auto;
+    padding: 14px 14px;
+    height: 53px;
+    width: 53px;
+display: block;
+}
+/*contact section*/
+#contact{
+    margin: 25px 5px;
+   position: relative;
+    font-size: 20px;
+    padding: 2px 2px;
+    
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+height: 100%;
+z-index: -1;
+opacity: 0.2;
+background: url('download.png');
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box input, #contact-box textarea{
+    width: 100%;
+padding: 0.4rem;
+border-radius: 4px;
+border-color: black;
+}
+footer{
+    background: black;
+color: beige;
+
+
+}
+
+
+
+
